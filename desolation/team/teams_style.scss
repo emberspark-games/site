@@ -1,0 +1,66 @@
+$desocolor: rgb(211, 140, 28);
+/*text*/
+
+.teamname {
+  font-size: 2.5vh;
+  margin-top: 2.75vh;
+}
+.teamroles {
+  font-size: 2vh;
+  margin-bottom: 0px;
+  margin-top: 2.25vh;
+}
+/*images*/
+
+.profile img {
+  width: 100%;
+  margin-bottom: -2vh;
+  pointer-events: none;
+}
+/*divs*/
+
+.profile {
+  position: relative;
+  width: max(20%, 15vh);
+  top: 0;
+  background-color: rgb(15,15,15);
+  padding: 1.5vh;
+  margin: 2.0vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  text-decoration: none;
+  transition: box-shadow ease 0.25s, top ease 0.25s;
+  @media screen and (orientation:portrait)
+  {
+    width: 100%;
+  }
+}
+.teamlist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 0.5vh;
+  margin-bottom: 2vh;
+  justify-content: space-around;
+}
+.profile:hover, .profile:focus-within {
+  top: -10px;
+  box-shadow: 4px 4px $desocolor;
+}
+
+h1
+{
+  @media screen and (orientation:portrait)
+  {
+    font-size: 5vh;
+  } 
+}
+
+p
+{
+  @media screen and (orientation:portrait)
+  {
+    font-size: 2.5vh;
+  }
+}
