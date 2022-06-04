@@ -88,39 +88,39 @@ ol > li:before {
 p {
   &.articleBody {
     color: #181818;
-    font-size: 1.1rem;
+    font-size: 1.2vh;
     font-family: 'Open Sans';
 
     @media screen and (orientation:portrait)
     {
-      font-size: 1.1rem;
+      font-size: 2vh;
     }
   }
 
   @media screen and (orientation:portrait)
   {
-    font-size: 1.5rem;
+    font-size: 2.5vh;
   }
 }
 
 li {
-  font-size: 1.1rem;
+  font-size: 1.2vh;
   @media screen and (orientation:portrait)
   {
-    font-size: 1.1rem;
+    font-size: 2vh;
   }
 }
 
 h1 {
   @media screen and (orientation:portrait)
   {
-    font-size: 2rem !important;
+    font-size: 4vh !important;
   }
 }
 
 span {
   @media screen and (orientation:portrait)
   {
-    font-size: 1.1rem !important;
+    font-size: 2vh !important;
   }
 }

@@ -2,11 +2,11 @@ $desocolor: rgb(211, 140, 28);
 /*text*/
 
 .teamname {
-  font-size: 2rem;
+  font-size: 2.5vh;
   margin-top: 2.75vh;
 }
 .teamroles {
-  font-size: 1.5rem;
+  font-size: 2vh;
   margin-bottom: 0px;
   margin-top: 2.25vh;
 }
@@ -53,7 +53,7 @@ h1
 {
   @media screen and (orientation:portrait)
   {
-    font-size: 3rem;
+    font-size: 5vh;
   } 
 }
 
@@ -61,6 +61,6 @@ p
 {
   @media screen and (orientation:portrait)
   {
-    font-size: 1.5rem;
+    font-size: 2.5vh;
   }
 }
