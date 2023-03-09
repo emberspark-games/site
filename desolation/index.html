@@ -1,226 +1,58 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <base href=".">
-  <title>About - DESΩLATION</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="dist/css/splide.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Roboto+Condensed:wght@300;400;700&amp;family=Inter:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
-  <script src="dist/js/splide.min.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics-->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J4Z3WJT19Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-J4Z3WJT19Q');
-  </script>
-  <script>
-    function toggle_vid(vid) {
-      if (vid.paused) { vid.play(); } else { vid.pause(); }
+<!DOCTYPE html><head><meta charset="UTF-8"><base href="."><title>About - DESΩLATION</title><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="manifest" href="site.webmanifest"><link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="dist/css/splide.min.css"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Roboto+Condensed:wght@300;400;700&amp;family=Inter:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"><script src="dist/js/splide.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics--><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J4Z3WJT19Q"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-J4Z3WJT19Q');</script><script>function toggle_vid(vid) {
+  if (vid.paused) { vid.play(); } else { vid.pause(); }
+}</script></head><body><video id="background-video" loop="" muted="" autoplay="" playsinline="" poster="videos/bigpipe_thumb.jpg"><source src="videos/bigpipe.webm" type="video/webm"></video><script src="parallax.js"></script><div class="navbar"><a class="navactive" href="">ABOUT</a><a href="news">NEWS</a><a href="media">MEDIA</a><a href="team">TEAM</a><a href="faq">FAQ</a></div><div style="height: 100vh; position: relative;"><!-- We don't include header.pug since we want different spacing--><div class="logoContainer"><img class="logo" src="./images/desolation_logo.png"><div class="logoSubTitle"><p class="logo_bottom">A new community-made <b>Portal</b> game, in tribute to Valve's iconic series</p><p class="logo_bottom">Currently mid-development</p><div class="time_to_get_down_with_the_beat_BABY" style="margin: auto; display: flex;"><a class="button_socials arrow_down" href="#body" style="background-image: url(./images/Arrow.png); mix-blend-mode: screen; margin: 10px; min-width: 50px; min-height: 50px;" onClick="document.getElementById('theContent').scrollIntoView();"></a><!--a.button_socials(href='#body', style='background-image: url(./images/Exit.png); width: 8vh; height: 8vh; mix-blend-mode: screen; margin: 10px; min-width: 50px; min-height: 50px;', onClick="document.getElementById('theContent').scrollIntoView();")--></div></div></div><svg id="fader"></svg><script>fadeInPage();
+document.addEventListener('DOMContentLoaded', function() {
+  setInterval(function() {
+    var val = 1;
+    if (Math.random() > 0.5) {
+      val = Math.random();
     }
-  </script>
-</head>
-<body>
-  <video id="background-video" loop="" muted="" autoplay="" playsinline="" poster="videos/bigpipe_thumb.jpg">
-    <source src="videos/bigpipe.webm" type="video/webm">
-  </video>
-  <script src="parallax.js"></script>
-  <div class="navbar"><a class="navactive" href="">ABOUT</a><a href="news">NEWS</a><a href="media">MEDIA</a><a href="team">TEAM</a><a href="faq">FAQ</a></div>
-  <div style="height: 100vh; position: relative;">
-    <!-- We don't include header.pug since we want different spacing-->
-    <div class="logoContainer"><img class="logo" src="./images/desolation_logo.png">
-      <div class="logoSubTitle">
-        <p class="logo_bottom">A new community-made <b>Portal</b> game, in tribute to Valve's iconic series</p>
-        <p class="logo_bottom">Currently mid-development</p>
-        <div class="time_to_get_down_with_the_beat_BABY" style="margin: auto; display: flex;"><a class="button_socials arrow_down" href="#body" style="background-image: url(./images/Arrow.png); mix-blend-mode: screen; margin: 10px; min-width: 50px; min-height: 50px;" onClick="document.getElementById('theContent').scrollIntoView();"></a>
-          <!--a.button_socials(href='#body', style='background-image: url(./images/Exit.png); width: 8vh; height: 8vh; mix-blend-mode: screen; margin: 10px; min-width: 50px; min-height: 50px;', onClick="document.getElementById('theContent').scrollIntoView();")-->
-        </div>
-      </div>
-    </div>
-    <svg id="fader"></svg>
-    <script>
-      fadeInPage();
-      document.addEventListener('DOMContentLoaded', function() {
-        setInterval(function() {
-          var val = 1;
-          if (Math.random() > 0.5) {
-            val = Math.random();
-          }
-          document.querySelector("img.logo").style.opacity = 0.9+0.1*val;
-        }, 60);
-      });
-    </script>
-    <script>
-      var splide;
-      document.addEventListener( 'DOMContentLoaded', function () {
-        splide = new Splide( '#image-slider', {
-          'cover' : true,
-          'rewind': true,
-          'pagination': false,
-        } ).mount();
-      } );
-    </script>
-    <div class="bottomfade"></div><img src="images/background_fade2.png" style="position: absolute; width: 100%; bottom: 0; pointer-events: none;">
-  </div>
-  <!--div(style='height: 200px; position: relative;')-->
-  <!--#about-fade-->
-  <!--.bottomfade-->
-  <div id="body" style="position: relative;">
-    <div id="showcaseContainer1">
-      <div class="topfadeContainer"></div>
-      <div class="bottomfadeContainerGrey"></div>
-      <div class="contentContainer">
-        <div class="showcaseText" id="showText1">
-          <h1 class="please_use_a_class">
-            THE
-            ULTIMATE<br>PORTAL
-            EXPERIENCE.
-          </h1>
-          <p class="stract_i_will_fucking_end_you">
-            Desolation is a brand-new, fan-made game that reinvigorates and expands upon the iconic gameplay and beloved universe of Valve's
-            Portal series. Experience a full-length single-player campaign
-            featuring hours of tightly-paced puzzle solving, driven by an epic
-            new narrative.
-          </p>
-        </div>
-        <div class="videoContainer" id="vid1" onclick="toggle_vid(document.getElementById(&quot;firstvid&quot;))">
-          <video class="feature" id="firstvid" loop="" muted="" autoplay="" playsinline="">
-            <source src="videos/ultimate.webm" type="video/webm">
-          </video>
-        </div>
-      </div>
-    </div>
-    <div style="height: 30px; background-color: rgb(14,14,14); position: relative;"></div>
-    <div id="showcaseContainer2">
-      <div class="topfadeContainerGrey"></div>
-      <div class="bottomfadeContainerGrey"></div>
-      <div class="contentContainer">
-        <div class="showcaseText" id="showText2">
-          <h1 class="please_use_a_class">FLING INTO ACTION,<br>THINK YOUR WAY OUT.</h1>
-          <div style="background-color: rgba(14,14,14,0.7); padding: 20px;">
-            <p class="stract_i_will_fucking_end_you">
-              Desolation takes everything you love about Portal to the next level. With two new testing elements at your disposal, puzzle your way through 
-              dozens of engaging test chambers packed with exhilarating feats and mind-bending solutions. <br><br>Each chamber is accompanied by dynamic music that adapts to your actions and changes as you play, 
-              reacting to your use of puzzle mechanics and evolving seamlessly to reward your progress.
-            </p><br>
-            <!--hr(style='border: 1px solid rgb(211, 140, 28);')--><img src="images/adhesion3.png" style="width: 90%; margin: 10px auto; box-shadow: 0 0 16px; display: block;">
-            <!--hr(style='border: 1px solid rgb(211, 140, 28);')--><br>
-            <h2 class="please_use_a_class upgrade">SYSTEM UPGRADE</h2>
-            <p class="stract_i_will_fucking_end_you">
-              Desolation runs on an in-house modified version of the Source Engine, newly upgraded to match modern-day standards. This includes a 
-              brand-new lighting/rendering system and a variety of new shaders that emphasize physicality 
-              and dynamism in lighting and materials.<br><br>Many assets from Portal 2 have been re-crafted from scratch with higher fidelity, and with 
-              great care placed into keeping them faithful to the originals.
-            </p><br><img src="images/stasis_ss_final2_1080.png" style="width: 90%; margin: 10px auto; box-shadow: 0 0 16px; display: block;">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="height: 30px; background-color: rgb(14,14,14); position: relative;"></div>
-    <div id="showcaseContainer3">
-      <div class="topfadeContainerGrey"></div>
-      <div class="bottomfadeContainerGrey"></div>
-      <div class="contentContainer">
-        <div class="showcaseText" id="showText3">
-          <h1 class="please_use_a_class">B.R.A.C.E. YOURSELF.</h1>
-          <div style="background-color: rgba(14,14,14,0.7); padding: 20px;">
-            <p class="stract_i_will_fucking_end_you">
-              Set many years after Portal 2, Desolation tells the story of a cybernetically-enhanced test subject named Diana Mendez. 
-              After sustaining injuries, Diana is fitted with Aperture's B.R.A.C.E. cybernetic 
-              system, featuring a suite of robotic upgrades including an integrated Portal Device.<br><br>When a relentless threat emerges, Diana must embark on a perilous journey that will 
-              see her uncover Aperture's mysterious past... and maybe even face her own.<br><a class="inlineButton" href="catalog">Read the &ldquo;1981 Consumer Catalog&rdquo; teaser</a>
-            </p>
-            <hr style="border: 1px solid rgb(211, 140, 28);"><br>
-            <p class="stract_i_will_fucking_end_you">
-              Stunning visuals, atmospheric music, and a gripping story combine to create a distinctive darker tone that enlivens Aperture Laboratories with a fresh sense 
-              of tension and mystery.<br><br>Meet new characters, face new dangers, and discover new locations in a meticulously crafted world brimming with atmosphere, intrigue, and humour.
-            </p>
-          </div>
-        </div>
-        <div class="please_no" style="position: relative; box-shadow: 0 0 20px 5px;">
-          <div class="splide" id="image-slider" style="margin: auto;">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide"><a href="javascript:void(0)" onclick="toggle_vid(document.getElementById(&quot;vid2&quot;))">
-                    <video id="vid2" loop="" muted="" autoplay="" playsinline="" style="width: 100%;">
-                      <source src="videos/stillshots.webm" type="video/mp4">
-                    </video></a></li>
-                <li class="splide__slide"><img class="inline" src="images/mystery.png"></li>
-                <li class="splide__slide"><img class="inline" src="images/sphere.png"></li>
-                <li class="splide__slide"><img class="inline" src="images/adhesion2.png"></li>
-                <li class="splide__slide"><img class="inline" src="images/door.png"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="height: 30px; background-color: rgb(14,14,14); position: relative;"></div>
-    <div id="showcaseContainer4">
-      <div class="topfadeContainerGrey"></div>
-      <div class="bottomfadeContainerGrey"></div>
-      <div class="contentContainer">
-        <div class="showcaseText" id="showText4">
-          <h1 class="please_use_a_class">PRESS QUOTES</h1>
-          <div style="display: flex; flex-flow: row wrap; position: relative; justify-content: space-around; align-items: flex-start; width: 100%;">
-            <div class="blood_on_my_hands" style="background-color: rgba(14,14,14,0.4); margin: 1vmin; padding-left: 1vmin; padding-right: 1vmin;">
-              <p class="quote">&ldquo;Desolation is a Portal 2 mod, though that descriptor really sells it short. It's closer to a full-blown, fan-made sequel to Valve's series.&rdquo;</p>
-              <p class="subtext">— Kotaku</p>
-            </div>
-            <div class="blood_on_my_hands" style="background-color: rgba(14,14,14,0.4); margin: 1vmin; padding-left: 1vmin; padding-right: 1vmin;">
-              <p class="quote">&ldquo;Portal 2: Desolation is an astoundingly impressive project driven by passionate fans who want to continue on in an adventure that so many of us have fallen in love with.&rdquo;</p>
-              <p class="subtext">— Game Informer</p>
-            </div>
-            <div class="blood_on_my_hands" style="background-color: rgba(14,14,14,0.4); margin: 1vmin; padding-left: 1vmin; padding-right: 1vmin;">
-              <p class="quote">&ldquo;An original story, characters and location for an ambitious sounding experience &mdash; exciting!&rdquo;</p>
-              <p class="subtext">— GamingOnLinux</p>
-            </div>
-            <div class="blood_on_my_hands" style="background-color: rgba(14,14,14,0.4); margin: 1vmin; padding-left: 1vmin; padding-right: 1vmin;">
-              <p class="quote">&ldquo;Portal 2: Desolation looks like the best opportunity to enjoy a deep and sophisticated Portal experience.&rdquo;</p>
-              <p class="subtext">— ScreenRant</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    // Remove transition class, JS is enabled
-    const showText1 = document.querySelector('#showText1');  
-    const vid1 = document.querySelector('#vid1');
-    showText1.classList.add('shoveBehindEverything');
-    
-    const ob = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting || (window.innerWidth < window.innerHeight) || Math.abs(window.innerWidth - window.innerHeight) < 400) {
-          showText1.style.marginLeft = '10px';
-          showText1.style.opacity = 1;
-          vid1.style.opacity = 1;
-          showText1.classList.remove('shoveBehindEverything');
-          return;
-        } else {
-          showText1.style.marginLeft = '-400px';
-          showText1.style.opacity = 0;
-          vid1.style.opacity = 0;
-        }
-      });
-    });
-    
-    ob.observe(document.querySelector('.videoContainer'));
-    
-  </script>
-  <div class="bottomzone_socials"><a class="button_socials" href="https://discord.gg/9H65vyQ" style="background-image: url(./images/discord.png);" target="_blank"></a><a class="button_socials" href="https://www.moddb.com/mods/desolation" style="background-image: url(./images/moddb.png);" target="_blank"></a><a class="button_socials" href="https://twitter.com/desolation_mod" style="background-image: url(./images/twitter.png);" target="_blank"></a><a class="button_socials" href="https://www.instagram.com/portal2_desolation/" style="background-image: url(./images/instagram.png);" target="_blank"></a><a class="button_socials" href="https://www.youtube.com/embersparkgames" style="background-image: url(./images/youtube.png);" target="_blank"></a></div>
-  <div class="bottomzone_emberspark"><a href="https://emberspark.games" target="_blank"><img class="emberspark" src="./images/emberspark.svg"></a>
-    <p class="feet" style="font-weight: 400; opacity: 50%;">© Emberspark Games, 2022 &mdash; <span><a class="url" href="mailto:info@emberspark.games">Contact Us</a></span></p>
-  </div>
-</body>
+    document.querySelector("img.logo").style.opacity = 0.9+0.1*val;
+  }, 60);
+});</script><script>var splide;
+document.addEventListener( 'DOMContentLoaded', function () {
+  splide = new Splide( '#image-slider', {
+    'cover' : true,
+    'rewind': true,
+    'pagination': false,
+  } ).mount();
+} );</script><div class="bottomfade"></div><img src="images/background_fade2.png" style="position: absolute; width: 100%; bottom: 0; pointer-events: none;"></div><!--div(style='height: 200px; position: relative;')--><!--#about-fade--><!--.bottomfade--><div id="body" style="position: relative;"><div id="showcaseContainer1"><div class="topfadeContainer"></div><div class="bottomfadeContainerGrey"></div><div class="contentContainer"><div class="showcaseText" id="showText1"><h1 class="please_use_a_class">THE
+ULTIMATE<br>PORTAL
+EXPERIENCE.</h1><p class="stract_i_will_fucking_end_you">Desolation is a brand-new, fan-made game that reinvigorates and expands upon the iconic gameplay and beloved universe of Valve's
+Portal series. Experience a full-length single-player campaign
+featuring hours of tightly-paced puzzle solving, driven by an epic
+new narrative.</p></div><div class="videoContainer" id="vid1" onclick="toggle_vid(document.getElementById(&quot;firstvid&quot;))"><video class="feature" id="firstvid" loop="" muted="" autoplay="" playsinline=""><source src="videos/ultimate.webm" type="video/webm"></video></div></div></div><div style="height: 30px; background-color: rgb(14,14,14); position: relative;"></div><div id="showcaseContainer2"><div class="topfadeContainerGrey"></div><div class="bottomfadeContainerGrey"></div><div class="contentContainer"><div class="showcaseText" id="showText2"><h1 class="please_use_a_class">FLING INTO ACTION,<br>THINK YOUR WAY OUT.</h1><div style="background-color: rgba(14,14,14,0.7); padding: 20px;"><p class="stract_i_will_fucking_end_you">Desolation takes everything you love about Portal to the next level. With two new testing elements at your disposal, puzzle your way through 
+dozens of engaging test chambers packed with exhilarating feats and mind-bending solutions. <br><br>Each chamber is accompanied by dynamic music that adapts to your actions and changes as you play, 
+reacting to your use of puzzle mechanics and evolving seamlessly to reward your progress.</p><br><!--hr(style='border: 1px solid rgb(211, 140, 28);')--><img src="images/adhesion3.png" style="width: 90%; margin: 10px auto; box-shadow: 0 0 16px; display: block;"><!--hr(style='border: 1px solid rgb(211, 140, 28);')--><br><h2 class="please_use_a_class upgrade">SYSTEM UPGRADE</h2><p class="stract_i_will_fucking_end_you">Desolation runs on an in-house modified version of the Source Engine, newly upgraded to match modern-day standards. This includes a 
+brand-new lighting/rendering system and a variety of new shaders that emphasize physicality 
+and dynamism in lighting and materials.<br><br>Many assets from Portal 2 have been re-crafted from scratch with higher fidelity, and with 
+great care placed into keeping them faithful to the originals.</p><br><img src="images/stasis_ss_final2_1080.png" style="width: 90%; margin: 10px auto; box-shadow: 0 0 16px; display: block;"></div></div></div></div><div style="height: 30px; background-color: rgb(14,14,14); position: relative;"></div><div id="showcaseContainer3"><div class="topfadeContainerGrey"></div><div class="bottomfadeContainerGrey"></div><div class="contentContainer"><div class="showcaseText" id="showText3"><h1 class="please_use_a_class">B.R.A.C.E. YOURSELF.</h1><div style="background-color: rgba(14,14,14,0.7); padding: 20px;"><p class="stract_i_will_fucking_end_you">Set many years after Portal 2, Desolation tells the story of a cybernetically-enhanced test subject named Diana Mendez. 
+After sustaining injuries, Diana is fitted with Aperture's B.R.A.C.E. cybernetic 
+system, featuring a suite of robotic upgrades including an integrated Portal Device.<br><br>When a relentless threat emerges, Diana must embark on a perilous journey that will 
+see her uncover Aperture's mysterious past... and maybe even face her own.<br><a class="inlineButton" href="catalog">Read the &ldquo;1981 Consumer Catalog&rdquo; teaser</a></p><hr style="border: 1px solid rgb(211, 140, 28);"><br><p class="stract_i_will_fucking_end_you">Stunning visuals, atmospheric music, and a gripping story combine to create a distinctive darker tone that enlivens Aperture Laboratories with a fresh sense 
+of tension and mystery.<br><br>Meet new characters, face new dangers, and discover new locations in a meticulously crafted world brimming with atmosphere, intrigue, and humour.</p></div></div><div class="please_no" style="position: relative; box-shadow: 0 0 20px 5px;"><div class="splide" id="image-slider" style="margin: auto;"><div class="splide__track"><ul class="splide__list"><li class="splide__slide"><a href="javascript:void(0)" onclick="toggle_vid(document.getElementById(&quot;vid2&quot;))"><video id="vid2" loop="" muted="" autoplay="" playsinline="" style="width: 100%;"><source src="videos/stillshots.webm" type="video/mp4"></video></a></li><li class="splide__slide"><img class="inline" src="images/mystery.png"></li><li class="splide__slide"><img class="inline" src="images/sphere.png"></li><li class="splide__slide"><img class="inline" src="images/adhesion2.png"></li><li class="splide__slide"><img class="inline" src="images/door.png"></li></ul></div></div></div></div></div><div style="height: 30px; background-color: rgb(14,14,14); position: relative;"></div><div id="showcaseContainer4"><div class="topfadeContainerGrey"></div><div class="bottomfadeContainerGrey"></div><div class="contentContainer"><div class="showcaseText" id="showText4"><h1 class="please_use_a_class">PRESS QUOTES</h1><div style="display: flex; flex-flow: row wrap; position: relative; justify-content: space-around; align-items: flex-start; width: 100%;"><div class="blood_on_my_hands" style="background-color: rgba(14,14,14,0.4); margin: 1vmin; padding-left: 1vmin; padding-right: 1vmin;"><p class="quote">&ldquo;Desolation is a Portal 2 mod, though that descriptor really sells it short. It's closer to a full-blown, fan-made sequel to Valve's series.&rdquo;</p><p class="subtext">— Kotaku</p></div><div class="blood_on_my_hands" style="background-color: rgba(14,14,14,0.4); margin: 1vmin; padding-left: 1vmin; padding-right: 1vmin;"><p class="quote">&ldquo;Portal 2: Desolation is an astoundingly impressive project driven by passionate fans who want to continue on in an adventure that so many of us have fallen in love with.&rdquo;</p><p class="subtext">— Game Informer</p></div><div class="blood_on_my_hands" style="background-color: rgba(14,14,14,0.4); margin: 1vmin; padding-left: 1vmin; padding-right: 1vmin;"><p class="quote">&ldquo;An original story, characters and location for an ambitious sounding experience &mdash; exciting!&rdquo;</p><p class="subtext">— GamingOnLinux</p></div><div class="blood_on_my_hands" style="background-color: rgba(14,14,14,0.4); margin: 1vmin; padding-left: 1vmin; padding-right: 1vmin;"><p class="quote">&ldquo;Portal 2: Desolation looks like the best opportunity to enjoy a deep and sophisticated Portal experience.&rdquo;</p><p class="subtext">— ScreenRant</p></div></div></div></div></div></div><script>// Remove transition class, JS is enabled
+const showText1 = document.querySelector('#showText1');  
+const vid1 = document.querySelector('#vid1');
+showText1.classList.add('shoveBehindEverything');
+
+const ob = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting || (window.innerWidth < window.innerHeight) || Math.abs(window.innerWidth - window.innerHeight) < 400) {
+      showText1.style.marginLeft = '10px';
+      showText1.style.opacity = 1;
+      vid1.style.opacity = 1;
+      showText1.classList.remove('shoveBehindEverything');
+      return;
+    } else {
+      showText1.style.marginLeft = '-400px';
+      showText1.style.opacity = 0;
+      vid1.style.opacity = 0;
+    }
+  });
+});
+
+ob.observe(document.querySelector('.videoContainer'));
+</script><div class="bottomzone_socials"><a class="button_socials" href="https://discord.gg/9H65vyQ" style="background-image: url(./images/discord.png);" target="_blank"></a><a class="button_socials" href="https://www.moddb.com/mods/desolation" style="background-image: url(./images/moddb.png);" target="_blank"></a><a class="button_socials" href="https://twitter.com/desolation_mod" style="background-image: url(./images/twitter.png);" target="_blank"></a><a class="button_socials" href="https://www.instagram.com/portal2_desolation/" style="background-image: url(./images/instagram.png);" target="_blank"></a><a class="button_socials" href="https://www.youtube.com/embersparkgames" style="background-image: url(./images/youtube.png);" target="_blank"></a></div><div class="bottomzone_emberspark"><a href="https://emberspark.games" target="_blank"><img class="emberspark" src="./images/emberspark.svg"></a><p class="feet" style="font-weight: 400; opacity: 50%;">© Emberspark Games, 2023 &mdash; <span><a class="url" href="mailto:info@emberspark.games">Contact Us</a></span></p></div></body>

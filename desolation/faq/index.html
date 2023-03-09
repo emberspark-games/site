@@ -1,193 +1,38 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <base href="../">
-  <title>FAQ - DESΩLATION</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="dist/css/splide.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Roboto+Condensed:wght@300;400;700&amp;family=Inter:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
-  <script src="dist/js/splide.min.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics-->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J4Z3WJT19Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-J4Z3WJT19Q');
-  </script>
-</head>
-<body>
-  <video class="background" id="background-video" loop="" muted="" autoplay="" poster="videos/bigfizz_thumb.jpg">
-    <source src="videos/bigfizz.webm" type="video/webm">
-  </video>
-  <script src="parallax.js"></script>
-  <script>
-    var prev = null;
-    document.addEventListener( 'DOMContentLoaded', function () {
-      var bruh = document.getElementsByClassName('collapsibleContent')
-      var coll = document.getElementsByClassName('collapsible');
-      for (i = 0; i < bruh.length; ++i) {
-        bruh[i].style.maxHeight = 0;
-      }
-      var i;
-      for (i = 0; i < coll.length; ++i) {
-        coll[i].addEventListener('click', function() {
-          this.classList.toggle('active');
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight && content.style.maxHeight != '0px') { // Hide it
-            content.style.maxHeight = '0px';
-            prev = null;
-          } else { // Show it
-            content.style.maxHeight = content.scrollHeight + 'px';
-            if (prev) {
-              prev.classList.toggle('active');
-              prev.nextElementSibling.style.maxHeight = '0px';
-            }
-            prev = this;
-          }
-        });
-      }
-    });
-  </script>
-  <div class="navbar"><a href="">ABOUT</a><a href="news">NEWS</a><a href="media">MEDIA</a><a href="team">TEAM</a><a class="navactive" href="faq">FAQ</a></div>
-  <div></div>
-  <div class="logoContainer"><img class="logo" src="./images/desolation_logo.png">
-    <div class="logoSubTitle">
-      <p class="logo_bottom">A new community-made <b>Portal</b> game, in tribute to Valve's iconic series</p>
-      <p class="logo_bottom">Currently mid-development</p>
-    </div>
-  </div>
-  <svg id="fader"></svg>
-  <script>
-    fadeInPage();
-    document.addEventListener('DOMContentLoaded', function() {
-      setInterval(function() {
-        var val = 1;
-        if (Math.random() > 0.5) {
-          val = Math.random();
+<!DOCTYPE html><head><meta charset="UTF-8"><base href="../"><title>FAQ - DESΩLATION</title><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="manifest" href="site.webmanifest"><link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="dist/css/splide.min.css"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Roboto+Condensed:wght@300;400;700&amp;family=Inter:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"><script src="dist/js/splide.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics--><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J4Z3WJT19Q"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-J4Z3WJT19Q');</script></head><body><video class="background" id="background-video" loop="" muted="" autoplay="" poster="videos/bigfizz_thumb.jpg"><source src="videos/bigfizz.webm" type="video/webm"></video><script src="parallax.js"></script><script>var prev = null;
+document.addEventListener( 'DOMContentLoaded', function () {
+  var bruh = document.getElementsByClassName('collapsibleContent')
+  var coll = document.getElementsByClassName('collapsible');
+  for (i = 0; i < bruh.length; ++i) {
+    bruh[i].style.maxHeight = 0;
+  }
+  var i;
+  for (i = 0; i < coll.length; ++i) {
+    coll[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight && content.style.maxHeight != '0px') { // Hide it
+        content.style.maxHeight = '0px';
+        prev = null;
+      } else { // Show it
+        content.style.maxHeight = content.scrollHeight + 'px';
+        if (prev) {
+          prev.classList.toggle('active');
+          prev.nextElementSibling.style.maxHeight = '0px';
         }
-        document.querySelector("img.logo").style.opacity = 0.9+0.1*val;
-      }, 60);
+        prev = this;
+      }
     });
-  </script>
-  <div class="centerContentBG">
-    <div class="centerContentText">
-      <h1>FAQ</h1>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">What is Desolation?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>Portal 2: Desolation is a brand new community-made Portal game, created by fans in tribute to Valve's iconic series. While it's not an official sequel, it aims to match Portal 2 in scope and quality, providing players with a distinct and memorable new experience in the Portal universe.</p>
-          <p>Desolation is created by Emberspark Games. We're a tight-knit team of talented volunteers from around the globe, working together remotely to develop the game in our spare time. And just like you, we're huge Portal fans!</p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">What makes Desolation unique?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>Desolation takes Portal in a bold new direction. Motivated by a shared creative vision, our team aims to deliver a game that expands upon and reinvigorates Aperture Science with thrilling puzzles, a distinct darker tone, and a gripping story.</p>
-          <p>Everything from the immersive visuals to the atmospheric soundtrack is designed to support this creative vision, resulting in a new look and feel for Portal that honours the original games while driving the universe forward.</p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">What will the gameplay be like?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>Desolation takes the classic Portal gameplay formula to the next level. With two new testing elements at your disposal, the puzzles are more intricate and inventive than ever, making Desolation the perfect challenge for players who have already completed Portal 2.</p>
-          <p>Just like Portal 2, you'll experience plenty of daring acrobatics and exhilarating movement — but don't worry, these sequences are forgiving and easy to execute. Puzzles are always focused on logical thinking, not gaming skill or reflexes.</p>
-          <p>Plus, Desolation teaches you how to be a better puzzle solver as you play, giving you the capacity to conquer greater challenges as you progress. The carefully tailored gameplay structure and difficulty curve ensure that each test chamber feels satisfying to solve, providing an engaging level of challenge throughout.</p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">What are the two new testing elements?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>Desolation's first new testing element is Adhesion Gel, a liquid substance that causes anything it covers to become sticky. This enables players to essentially defy gravity, letting you walk on walls and stick objects to surfaces. Combined with the existing Repulsion, Propulsion, and Conversion Gels, paint has never been so perplexing.</p>
-          <p>Our second new testing element is an orange-coloured variant of the Hard Light Bridge. This variant functions differently compared to the original, and opens up all kinds of unique puzzle potential. We're keeping its exact function under wraps for now, but we can guarantee you'll need a well-oiled brain to master this devious new element.</p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">What's the story like?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>Dark, thrilling, and funny, Desolation tells an engaging and intelligent sci-fi story with an intricate plot, thought-provoking themes, and compelling characters.</p>
-          <p>The script retains Portal's legendary sense of humour, fizzing with sparky dialogue and a keen sense of adventure; it's also tense and unnerving, exploring murky concepts and ambiguous characters.</p>
-          <p>It's an irresistibly dark treat for fans looking to delve deeper into the world of Aperture Science.</p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">Is Desolation's story connected to Portal's?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>Desolation isn't a direct sequel (or prequel) to Portal or Portal 2, but it is set in the same world. It's the same Aperture you know and love, expanded to explore new concepts, characters, locations, and themes — a new story in the Portal universe.</p>
-          <p>We strive to be faithful to the existing games, but we're not rigorously adhering to everything that came before — we want to get creative and do something new. There may be occasional links and callbacks to look out for, but don't expect to see any familiar faces: Desolation features a brand-new cast of fully voice-acted characters, and tells a separate, standalone story.</p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">How big will the game be?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>We're aiming for Desolation to be a full-length game, with a generous amount of content. 50+ test chambers and an expansive story mean that, if all goes to plan, Desolation should end up being similar in length to Portal 2's single-player campaign — maybe even longer!</p>
-          <p>Note that playtime will vary depending on how experienced you are with puzzle games. But we hope that, no matter your aptitude, Desolation will feel like a sizable, memorable treat.</p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">How far along is development?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>We're happy to report that Desolation's development is running smoothly, and we're making good progress! It's impossible to put a number on it, but as you can see, we've already completed a substantial amount of work.</p>
-          <p>We're currently in mid-core development, focusing our efforts mainly on crafting levels, coding improvements, writing dialogue, and composing music.</p>
-          <p>This project is a massive undertaking with a huge scope, and especially as a team of volunteers working in our spare time, we're conscious that there's still a lot of work ahead of us. The exciting part is that we get to share our progress with you!</p>
-          <p>As development progresses, we'll continue to share exciting previews and teasers along the way. If you'd like to follow development and stay up-to-date with the latest news, be sure to follow us on <a class="url" href="https://twitter.com/desolation_mod" target="_blank">Twitter</a>, <a class="url" href="https://www.instagram.com/portal2_desolation/" target="_blank">Instagram</a>, <a class="url" href="https://www.moddb.com/mods/desolation" target="_blank">ModDB</a>, and <a class="url" href="https://www.youtube.com/embersparkgames" target="_blank">YouTube.</a></p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">Do you have a release date in mind?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>No, Desolation does not have a set release date yet. We'd love to give you an approximate timeframe for release, but the hobbyist nature of the project makes that difficult to estimate. We'd rather not disappoint with any delays, so don't expect a release date until we're confident that the game is completely finished.</p>
-          <p>We're pouring all our creative efforts into making Desolation as polished and refined as possible, and we'd hate to rush it. Equally, we're committed to getting it finished for you to play. Release is still a number of years away, but stick with us; we promise it'll be worth the wait.</p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">Will Desolation release on Steam?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>Yes! Desolation will release on Steam, and our current plan is for the game to be available for free.<br><br>We'll let you know when the Steam Store page is online and wishlisting is available.</p>
-        </div>
-      </div>
-      <div class="collapsibleContainer">
-        <button class="collapsible">
-          <h1 style="font-size: 200%">Can I help with the project?</h1>
-        </button>
-        <div class="collapsibleContent">
-          <p>We really appreciate the interest! If you reckon you've got the skills and enthusiasm required to work on this ambitious volunteer project, you can<a class="button" href="https://forms.gle/vhXXfKyuqCucMLN89" target="_blank">apply to join the Desolation development team here.</a>Note that we are <b>not </b>currently looking for playtesters, translators, puzzle designers, writers, or composers.<br><br>If you're not looking to join the team but still want to help us out, the best thing you can do is spread the word! Sharing Desolation with your friends is a surefire way to put a smile on our faces :)</p>
-        </div>
-      </div>
-    </div>
-    <!---->
-  </div>
-  <div class="bottomzone_socials"><a class="button_socials" href="https://discord.gg/9H65vyQ" style="background-image: url(./images/discord.png);" target="_blank"></a><a class="button_socials" href="https://www.moddb.com/mods/desolation" style="background-image: url(./images/moddb.png);" target="_blank"></a><a class="button_socials" href="https://twitter.com/desolation_mod" style="background-image: url(./images/twitter.png);" target="_blank"></a><a class="button_socials" href="https://www.instagram.com/portal2_desolation/" style="background-image: url(./images/instagram.png);" target="_blank"></a><a class="button_socials" href="https://www.youtube.com/embersparkgames" style="background-image: url(./images/youtube.png);" target="_blank"></a></div>
-  <div class="bottomzone_emberspark"><a href="https://emberspark.games" target="_blank"><img class="emberspark" src="./images/emberspark.svg"></a>
-    <p class="feet" style="font-weight: 400; opacity: 50%;">© Emberspark Games, 2022 &mdash; <span><a class="url" href="mailto:info@emberspark.games">Contact Us</a></span></p>
-  </div>
-</body>
+  }
+});</script><div class="navbar"><a href="">ABOUT</a><a href="news">NEWS</a><a href="media">MEDIA</a><a href="team">TEAM</a><a class="navactive" href="faq">FAQ</a></div><div></div><div class="logoContainer"><img class="logo" src="./images/desolation_logo.png"><div class="logoSubTitle"><p class="logo_bottom">A new community-made <b>Portal</b> game, in tribute to Valve's iconic series</p><p class="logo_bottom">Currently mid-development</p></div></div><svg id="fader"></svg><script>fadeInPage();
+document.addEventListener('DOMContentLoaded', function() {
+  setInterval(function() {
+    var val = 1;
+    if (Math.random() > 0.5) {
+      val = Math.random();
+    }
+    document.querySelector("img.logo").style.opacity = 0.9+0.1*val;
+  }, 60);
+});</script><div class="centerContentBG"><div class="centerContentText"><h1>FAQ</h1><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">What is Desolation?</h1></button><div class="collapsibleContent"><p>Portal 2: Desolation is a brand new community-made Portal game, created by fans in tribute to Valve's iconic series. While it's not an official sequel, it aims to match Portal 2 in scope and quality, providing players with a distinct and memorable new experience in the Portal universe.</p><p>Desolation is created by Emberspark Games. We're a tight-knit team of talented volunteers from around the globe, working together remotely to develop the game in our spare time. And just like you, we're huge Portal fans!</p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">What makes Desolation unique?</h1></button><div class="collapsibleContent"><p>Desolation takes Portal in a bold new direction. Motivated by a shared creative vision, our team aims to deliver a game that expands upon and reinvigorates Aperture Science with thrilling puzzles, a distinct darker tone, and a gripping story.</p><p>Everything from the immersive visuals to the atmospheric soundtrack is designed to support this creative vision, resulting in a new look and feel for Portal that honours the original games while driving the universe forward.</p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">What will the gameplay be like?</h1></button><div class="collapsibleContent"><p>Desolation takes the classic Portal gameplay formula to the next level. With two new testing elements at your disposal, the puzzles are more intricate and inventive than ever, making Desolation the perfect challenge for players who have already completed Portal 2.</p><p>Just like Portal 2, you'll experience plenty of daring acrobatics and exhilarating movement — but don't worry, these sequences are forgiving and easy to execute. Puzzles are always focused on logical thinking, not gaming skill or reflexes.</p><p>Plus, Desolation teaches you how to be a better puzzle solver as you play, giving you the capacity to conquer greater challenges as you progress. The carefully tailored gameplay structure and difficulty curve ensure that each test chamber feels satisfying to solve, providing an engaging level of challenge throughout.</p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">What are the two new testing elements?</h1></button><div class="collapsibleContent"><p>Desolation's first new testing element is Adhesion Gel, a liquid substance that causes anything it covers to become sticky. This enables players to essentially defy gravity, letting you walk on walls and stick objects to surfaces. Combined with the existing Repulsion, Propulsion, and Conversion Gels, paint has never been so perplexing.</p><p>Our second new testing element is an orange-coloured variant of the Hard Light Bridge. This variant functions differently compared to the original, and opens up all kinds of unique puzzle potential. We're keeping its exact function under wraps for now, but we can guarantee you'll need a well-oiled brain to master this devious new element.</p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">What's the story like?</h1></button><div class="collapsibleContent"><p>Dark, thrilling, and funny, Desolation tells an engaging and intelligent sci-fi story with an intricate plot, thought-provoking themes, and compelling characters.</p><p>The script retains Portal's legendary sense of humour, fizzing with sparky dialogue and a keen sense of adventure; it's also tense and unnerving, exploring murky concepts and ambiguous characters.</p><p>It's an irresistibly dark treat for fans looking to delve deeper into the world of Aperture Science.</p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">Is Desolation's story connected to Portal's?</h1></button><div class="collapsibleContent"><p>Desolation isn't a direct sequel (or prequel) to Portal or Portal 2, but it is set in the same world. It's the same Aperture you know and love, expanded to explore new concepts, characters, locations, and themes — a new story in the Portal universe.</p><p>We strive to be faithful to the existing games, but we're not rigorously adhering to everything that came before — we want to get creative and do something new. There may be occasional links and callbacks to look out for, but don't expect to see any familiar faces: Desolation features a brand-new cast of fully voice-acted characters, and tells a separate, standalone story.</p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">How big will the game be?</h1></button><div class="collapsibleContent"><p>We're aiming for Desolation to be a full-length game, with a generous amount of content. 50+ test chambers and an expansive story mean that, if all goes to plan, Desolation should end up being similar in length to Portal 2's single-player campaign — maybe even longer!</p><p>Note that playtime will vary depending on how experienced you are with puzzle games. But we hope that, no matter your aptitude, Desolation will feel like a sizable, memorable treat.</p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">How far along is development?</h1></button><div class="collapsibleContent"><p>We're happy to report that Desolation's development is running smoothly, and we're making good progress! It's impossible to put a number on it, but as you can see, we've already completed a substantial amount of work.</p><p>We're currently in mid-core development, focusing our efforts mainly on crafting levels, coding improvements, writing dialogue, and composing music.</p><p>This project is a massive undertaking with a huge scope, and especially as a team of volunteers working in our spare time, we're conscious that there's still a lot of work ahead of us. The exciting part is that we get to share our progress with you!</p><p>As development progresses, we'll continue to share exciting previews and teasers along the way. If you'd like to follow development and stay up-to-date with the latest news, be sure to follow us on <a class="url" href="https://twitter.com/desolation_mod" target="_blank">Twitter</a>, <a class="url" href="https://www.instagram.com/portal2_desolation/" target="_blank">Instagram</a>, <a class="url" href="https://www.moddb.com/mods/desolation" target="_blank">ModDB</a>, and <a class="url" href="https://www.youtube.com/embersparkgames" target="_blank">YouTube.</a></p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">Do you have a release date in mind?</h1></button><div class="collapsibleContent"><p>No, Desolation does not have a set release date yet. We'd love to give you an approximate timeframe for release, but the hobbyist nature of the project makes that difficult to estimate. We'd rather not disappoint with any delays, so don't expect a release date until we're confident that the game is completely finished.</p><p>We're pouring all our creative efforts into making Desolation as polished and refined as possible, and we'd hate to rush it. Equally, we're committed to getting it finished for you to play. Release is still a number of years away, but stick with us; we promise it'll be worth the wait.</p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">Will Desolation release on Steam?</h1></button><div class="collapsibleContent"><p>Yes! Desolation will release on Steam, and our current plan is for the game to be available for free.<br><br>We'll let you know when the Steam Store page is online and wishlisting is available.</p></div></div><div class="collapsibleContainer"><button class="collapsible"><h1 style="font-size: 200%">Can I help with the project?</h1></button><div class="collapsibleContent"><p>We really appreciate the interest! If you reckon you've got the skills and enthusiasm required to work on this ambitious volunteer project, you can<a class="button" href="https://forms.gle/vhXXfKyuqCucMLN89" target="_blank">apply to join the Desolation development team here.</a>Note that we are <b>not </b>currently looking for playtesters, translators, puzzle designers, writers, or composers.<br><br>If you're not looking to join the team but still want to help us out, the best thing you can do is spread the word! Sharing Desolation with your friends is a surefire way to put a smile on our faces :)</p></div></div></div><!----></div><div class="bottomzone_socials"><a class="button_socials" href="https://discord.gg/9H65vyQ" style="background-image: url(./images/discord.png);" target="_blank"></a><a class="button_socials" href="https://www.moddb.com/mods/desolation" style="background-image: url(./images/moddb.png);" target="_blank"></a><a class="button_socials" href="https://twitter.com/desolation_mod" style="background-image: url(./images/twitter.png);" target="_blank"></a><a class="button_socials" href="https://www.instagram.com/portal2_desolation/" style="background-image: url(./images/instagram.png);" target="_blank"></a><a class="button_socials" href="https://www.youtube.com/embersparkgames" style="background-image: url(./images/youtube.png);" target="_blank"></a></div><div class="bottomzone_emberspark"><a href="https://emberspark.games" target="_blank"><img class="emberspark" src="./images/emberspark.svg"></a><p class="feet" style="font-weight: 400; opacity: 50%;">© Emberspark Games, 2023 &mdash; <span><a class="url" href="mailto:info@emberspark.games">Contact Us</a></span></p></div></body>
